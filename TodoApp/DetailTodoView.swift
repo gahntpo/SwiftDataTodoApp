@@ -12,7 +12,7 @@ struct DetailTodoView: View {
     @Bindable var todo: Todo
     
     var body: some View {
-        VStack {
+        VStack(alignment: .leading, spacing: 30) {
             TextField("new todo", text: $todo.name)
                 .textFieldStyle(.roundedBorder)
             
@@ -43,8 +43,11 @@ struct DetailTodoView: View {
                 todo.tags?.append(tag)
                 
             } label: {
-                Text("add tag")
+                Text("add dummy tag")
             }
+            .frame(maxWidth: .infinity, alignment: .trailing)
+            
+            Spacer()
 
             
         }

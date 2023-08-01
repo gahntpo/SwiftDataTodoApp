@@ -42,6 +42,7 @@ struct ContentView: View {
                     }
                 }
             }
+            .navigationTitle("Your Todos")
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     EditButton()
