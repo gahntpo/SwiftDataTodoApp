@@ -72,5 +72,5 @@ struct ContentView: View {
 
 #Preview {
     ContentView()
-        .modelContainer(for: Todo.self, inMemory: true)
+        .modelContainer(previewContainer)
 }

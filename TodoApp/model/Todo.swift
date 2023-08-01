@@ -28,6 +28,13 @@ final class Todo {
         self.isDone = isDone
         self.priority = priority
     }
+    
+    static func example() -> Todo {
+        let todo = Todo(name: "Buy milk")
+        let tag = Tag(name: "Shopping", color: RGBColor(red: 1, green: 0, blue: 0))
+        todo.tags?.append(tag)
+        return todo
+    }
 }
 
 

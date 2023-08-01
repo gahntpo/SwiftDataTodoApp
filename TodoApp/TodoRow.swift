@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct TodoRow: View {
     let todo: Todo
@@ -24,8 +25,9 @@ struct TodoRow: View {
     }
 }
 
-/*
 #Preview {
-    TodoRow(todo: Todo(name: ""))
+    ModelPreview { todo in
+        TodoRow(todo: todo)
+    }
 }
-*/
+

@@ -52,8 +52,10 @@ struct DetailTodoView: View {
     }
 }
 
-/*
+
 #Preview {
-    DetailTodoView(todo: Todo(name: "new"))
+    ModelPreview { todo in
+        DetailTodoView(todo: todo)
+    }
 }
-*/
+
