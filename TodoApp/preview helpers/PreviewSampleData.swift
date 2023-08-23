@@ -11,7 +11,8 @@ import SwiftData
 let previewContainer: ModelContainer = {
     do {
         let container = try ModelContainer(for: Todo.self,
-                                           ModelConfiguration(inMemory: true))
+                                           configurations: ModelConfiguration(isStoredInMemoryOnly: true))
+        
         Task { @MainActor in
             let context = container.mainContext
             
